@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ที่รักของเค้า ดิวลี่</title>
+    <link rel="stylesheet" href="ar.css">
+</head>
+<body>
+    <div class="container">
+        <h1>คุณดิวลี่ รักพี่มั้ยจ๊ะ</h1>
+        <div class="buttons">
+            <button id="yes-btn">รักมากที่สุด</button>
+            <button id="no-btn">ไม่รัก</button>
+        </div>
+    </div>
+
+    <script>
+        document.getElementById("yes-btn").addEventListener("click", function() {
+            alert("เค้าก็รักเธอนะจ๊ะ");
+        });
+
+        document.getElementById("no-btn").addEventListener("mouseover", function() {
+            this.style.position = "absolute";
+            this.style.top = Math.random() * 80 + "vh";
+            this.style.left = Math.random() * 80 + "vw";
+        });
+    </script>
+</body>
+</html>
